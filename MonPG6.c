@@ -226,7 +226,7 @@ int main(int argc, char const *argv[])
 	else{
 
 		//Only jpg images are allowed
-		if ((strcmp(get_filename_ext(argv[2]), "jpg") == 0) || (strcmp(get_filename_ext(argv[2]), "jpeg") == 0) || (strcmp(get_filename_ext(argv[2]), "JPEG") == 0))
+		if ((strcmp(get_filename_ext(argv[2]), "jpg") == 0) || (strcmp(get_filename_ext(argv[2]), "jpeg") == 0) || (strcmp(get_filename_ext(argv[2]), "JPEG") == 0) || (strcmp(get_filename_ext(argv[2]), "JPG") == 0))
 		{
 			//In case of gray filter
 			if (strcmp(argv[1], "gray") == 0)
@@ -242,7 +242,7 @@ int main(int argc, char const *argv[])
 				printf("%s\n", "Only the filter  { gray, sepia } is allowed! ");
 			}
 		}else{
-			printf("%s\n", "Only the file with { .jpg, .jpeg, . JPEG } extension is allowed! ");
+			printf("%s\n", "Only the file with { .jpg, .JPG, .jpeg, . JPEG } extension is allowed! ");
 		}
 	}
 
